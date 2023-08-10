@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+<style>
+    .body{
+        display: flex;
+        flex-direction: row;
+    }
+    .abc{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart{
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        width: 77%;
+        background-color: white;
+    }
+    .footer
+    {
+        width: 100%;
+    }
+    .toplink
+    {
+        text-align: center;
+        height: 30px;
+        padding-top: 5px;
+        background-color:#4D4C5C;
+    }
+    .toplink a
+    {
+        text-decoration: none;
+        font-family: 'Heebo', sans-serif;
+        color: #301e14;
+        font-weight: 700;
+    }
+    .links
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: 'Heebo', sans-serif;
+        font-weight: 300px;
+        padding-top: 10px;
+        background-color: #232023;
+        color: white;
+    }
+
+</style>
+</head>
+<body bgcolor="#41424C">
+    <table id="header" border="0" width="100%" height="80" bgcolor="232023" align="center">
+        <tr>
+            <td rowspan="2">
+                <a href="bookstore.html"><img src="bookery.png" height="100"></a>
+            </td>
+            <td colspan="5">
+                <input type="text" placeholder="Search your item here" style="width: 97%; height:25px;">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><a href="bookstore.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    H O M E
+                </font></a>
+            </td>
+            <td align="center"><a href="books.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    B O O K S
+                </font></a>
+            </td>
+            <td align="center">
+                <font face="Agency FB" size="6" color="white">
+                    M A G A Z I N E S
+                </font>
+            </td>
+            <td align="center"><a href="register.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    S I G N - I N
+                </font></a>
+            </td>
+        </tr>
+    </table><br>
+    <div class="body">
+        <div class="cart">
+            <table align="center" width="96%" border="0" bgcolor="white" cellspacing="0" cellpadding="4">
+                <tr>
+                    <td colspan="4">
+                        <br><font size="7" face="Corbel">Shopping Cart</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <font color="blue" size="4">Deselect all items</font>
+                    </td>
+                    <td align="right" colspan="2">
+                        <font color="grey">Price</font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                    <td>
+                        <img src="32.jpg" height="350" width="240">
+                    </td>
+                    <td><font face="Corbel">
+                        <font size="5"><b>Rich Dad Poor Dad : What The Rich Teach Their Kids About Money That The Poor And Middle Class Do Not!</b></font><br>
+                        <font size="4">by Robert T. Kiyosaki</font><br><br>
+                        <b>Mass Market Paperback</b><br>
+                        <font color="green">In stock</font><br>
+                        <input type="checkbox">This will be gift. &nbsp; <font color="blue">Learn more</font><br><br>
+                        <select style="cursor:pointer; width: 11%; height:30px;" name="Select Quantity">
+                            <option value="" selected disabled hidden>Qty: 1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select> &nbsp; | &nbsp; <font color="blue">Delete</font> &nbsp; | &nbsp; <font color="blue">Save for later</font> &nbsp; | &nbsp; <font color="blue">Add to list</font> &nbsp; | &nbsp; <font color="blue">See more like this</font> &nbsp; | &nbsp; <font color="blue">Share</font>
+                    </font>
+                    </td>
+                    <td align="right">
+                        <font size="5"><b>₹412.00</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                    <td>
+                        <img src="33.jpg" height="350" width="240">
+                    </td>
+                    <td><font face="Corbel">
+                        <font size="5"><b>How To Win Friends & Influence People</b></font><br>
+                        <font size="4">by Dale Carnegie</font><br><br>
+                        <b>Paperback</b><br>
+                        <font color="green">In stock</font><br>
+                        <input type="checkbox">This will be gift. &nbsp; <font color="blue">Learn more</font><br><br>
+                        <select style="cursor:pointer; width: 11%; height:30px;" name="Select Quantity">
+                            <option value="" selected disabled hidden>Qty: 1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select> &nbsp; | &nbsp; <font color="blue">Delete</font> &nbsp; | &nbsp; <font color="blue">Save for later</font> &nbsp; | &nbsp; <font color="blue">Add to list</font> &nbsp; | &nbsp; <font color="blue">See more like this</font> &nbsp; | &nbsp; <font color="blue">Share</font>
+                    </font>
+                    </td>
+                    <td align="right">
+                        <font size="5"><b>₹97.00</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                    <td>
+                        <img src="34.jpg" height="350" width="240">
+                    </td>
+                    <td><font face="Corbel">
+                        <font size="5"><b>ReWork: Change the Way You Work Forever</b></font><br>
+                        <font size="4">by David Heinemeier Hansson</font><br><br>
+                        <b>Paperback</b><br>
+                        <font color="green">In stock</font><br>
+                        <input type="checkbox">This will be gift. &nbsp; <font color="blue">Learn more</font><br><br>
+                        <select style="cursor:pointer; width: 11%; height:30px;" name="Select Quantity">
+                            <option value="" selected disabled hidden>Qty: 1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select> &nbsp; | &nbsp; <font color="blue">Delete</font> &nbsp; | &nbsp; <font color="blue">Save for later</font> &nbsp; | &nbsp; <font color="blue">Add to list</font> &nbsp; | &nbsp; <font color="blue">See more like this</font> &nbsp; | &nbsp; <font color="blue">Share</font>
+                    </font>
+                    </td>
+                    <td align="right">
+                        <font size="5"><b>₹391.00</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" checked>
+                    </td>
+                    <td>
+                        <img src="35.jpg" height="350" width="240">
+                    </td>
+                    <td><font face="Corbel">
+                        <font size="5"><b>LINCHPIN</b></font><br>
+                        <font size="4">by Seth Godin</font><br><br>
+                        <b>Paperback</b><br>
+                        <font color="green">In stock</font><br>
+                        <input type="checkbox">This will be gift. &nbsp; <font color="blue">Learn more</font><br><br>
+                        <select style="cursor:pointer; width: 11%; height:30px;" name="Select Quantity">
+                            <option value="" selected disabled hidden>Qty: 1</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select> &nbsp; | &nbsp; <font color="blue">Delete</font> &nbsp; | &nbsp; <font color="blue">Save for later</font> &nbsp; | &nbsp; <font color="blue">Add to list</font> &nbsp; | &nbsp; <font color="blue">See more like this</font> &nbsp; | &nbsp; <font color="blue">Share</font>
+                    </font>
+                    </td>
+                    <td align="right">
+                        <font size="5"><b>₹281.00</b></font>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr width="100%">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="2" align="right">
+                        <font size="5" face="Arial">Subtotal (4 items): <b>₹1,181.00</b></font><br><br>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="abc">
+        <table align="right" bgcolor="white" border="0" cellspacing="0" height="300" cellpadding="14" width="300">
+            <tr>
+                <td align="justify"><font face="Corbel">
+                    <font face="Arial" style="font-size: 21px;">Subtotal (4 items): <b>₹1,181.00</b></font><br>
+                    <input type="checkbox">This order contains a gift.<br><br>
+                    <a href="payment.html"><button style="cursor:pointer; background-color: #ffc527; width: 100%; border: 0; height: 30px; border-radius: 8px;" type="submit">
+                        Proceed to Buy
+                    </button></a><br><br><br>
+                <b>EMI Available</b><br><br>
+                Your order qualifies for EMI with valid credit cards (not available on purchase of Gold, Jewellery, Gift cards and Bookery pay balance top up). <font color="blue">Learn more</font>
+                </font>
+                </td>
+            </tr>
+        </table><br><br>
+        <div class="sponsor">
+        <table align="right" bgcolor="white" border="0" cellspacing="0" height="600" cellpadding="14" width="300" style="border-radius: 7px;">
+            <tr>
+                <td colspan="2">
+                <font face="Corbel">
+                    <b>Products related to items in your cart</b><br>
+                    <font color="grey">Sponsored</font>
+                </font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <img src="36.jpg" height="130" width="100">
+                </td>
+                <td align="left">
+                    <font face="arial" size="2">
+                        BUSINESS STRATEGY<br>
+                        ⭐⭐⭐⭐ (627)<br><br>
+                        ₹261.00<br><br>
+                        <button type="submit" style="cursor:pointer; background-color: #ffffff; width: 100%; border: 1;border-radius: 10px; border-color: grey; border-style: solid;">
+                            See all buying options
+                        </button>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <img src="37.jpg" height="130" width="100">
+                </td>
+                <td align="left">
+                    <font face="arial" size="2">
+                        HR Interview Questions<br>
+                        ⭐⭐ (1024)<br><br>
+                        ₹494.00<br><br>
+                        <button type="submit" style="cursor:pointer; background-color: #ffffff; width: 100%; border: 1; border-radius: 10px; border-color: grey; border-style: solid;">
+                            See all buying options
+                        </button>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <img src="38.jpg" height="125" width="100"><br><br>
+                </td>
+                <td align="left">
+                    <font face="arial" size="2">
+                        The Pursuit of Happiness<br>
+                        ⭐⭐⭐⭐⭐ (405)<br><br>
+                        ₹325.00<br><br>
+                        <button type="submit" style="cursor:pointer; background-color: #ffffff; width: 100%; border: 1; border-radius: 10px; border-color: grey; border-style: solid;">
+                            See all buying options
+                        </button>
+                    </font>
+                </td>
+            </tr>
+                
+        </table>
+        </div>
+        </div>
+    </div><br>
+    <font style="font-size: 14px;" align="justify" face="Corbel" color="white">
+    The price and availability of items at Bookery.in are subject to change. The shopping cart is a temporary place to store a list of your items and reflects each item's most recent price.<br>
+    Do you have a promotional code? We'll ask you to enter your claim code when it's time to pay.<br><br>
+    </font>
+    
+    
+    
+    
+    
+    <div class="footer">
+        <div class="toplink"><a href="#Top"><font color="white">Back To Top</font></a></div>
+        <div class="links">
+            <div class="links1">
+                <strong>Get to Know Us</strong><br>
+                About Us<br>
+                Careers<br>
+                Press Releases<br>
+                Bookery Science<br>
+            </div>
+            <div class="links2">
+                <strong>Connect with Us</strong><br>
+                Facebook<br>
+                Twitter<br>
+                Instagram<br>
+            </div>
+            <div class="links3">
+                <strong>Earn Money with Us</strong><br>
+                Sell on Bookery<br>
+                Sell under Bookery Accelerator<br>
+                Protect and Build Your Brand<br>
+                Bookery Global Selling<br>
+                Become an Affiliate<br>
+                Fulfilment by Bookery<br>
+                Advertise Your Products<br><br>
+            </div>
+            <div class="links4">
+                <strong>Let Us Help You</strong><br>
+                COVID-19 and Bookery<br>
+                Your Account<br>
+                Returns Centre<br>
+                100% Purchase Protection<br>
+                Bookery App Download<br>
+                Bookery Assistant Download<br>
+                Help<br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

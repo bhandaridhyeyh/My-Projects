@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+<style>
+        .container
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        .footer
+        {
+            width: 100%;
+        }
+        .toplink
+        {
+            text-align: center;
+            height: 30px;
+            padding-top: 5px;
+            background-color:#4D4C5C;
+        }
+        .sidenav
+        {
+            display: flex;
+            color:white;
+            flex-direction: column;
+            margin: 30px 10px 0px;
+            font-family: 'Heebo', sans-serif;
+        }
+        .sidenav li
+        {
+            list-style: none;
+        }
+        .sidenav p, li
+        {
+            font-weight: 50px;
+        }
+        .sidenav input[type=number]
+        {
+            border: 1px solid;
+            border-style: groove;
+            border-radius: 4px;
+            width: 50px;
+            height: 30px;
+        }
+        .separator
+        {
+            border-right: 4px solid #ffffff;
+            margin-top: 100px;
+            margin-right: 20px;
+        }
+        .toplink a
+        {
+            text-decoration: none;
+            font-family: 'Heebo', sans-serif;
+            color: #301e14;
+            font-weight: 700;
+        }
+        .links
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-family: 'Heebo', sans-serif;
+            font-weight: 300px;
+            padding-top: 10px;
+            background-color: #232023;
+            color: white;
+        }
+</style>
+</head>
+<body bgcolor="#41424C">
+    <table id="header" border="0" width="100%" height="80" bgcolor="232023" align="center">
+        <tr>
+            <td rowspan="2">
+                <a href="bookstore.html"><img src="bookery.png" height="100"></a>
+            </td>
+            <td colspan="5">
+                <input type="text" placeholder="Search your item here" style="width: 97%; height:25px;">
+            </td>
+        </tr>
+        <tr>
+            <td align="center"><a href="bookstore.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    H O M E
+                </font></a>
+            </td>
+            <td align="center"><a href="books.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    B O O K S
+                </font></a>
+            </td>
+            <td align="center"><a href="#trending" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    T R E N D I N G
+                </font></a>
+            </td>
+            <td align="center"><a href="cart.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    S H O P P I N G - C A R T
+                </font></a>
+            </td>
+            <td align="center"><a href="register.html" style="text-decoration: none">
+                <font face="Agency FB" size="6" color="white">
+                    S I G N - I N
+                </font></a>
+            </td>
+        </tr>
+    </table>
+    <table border="0" width="100%" height="300" align="center" bgcolor="#41424C" cellspacing="7">
+        <tr>
+            <td align="center">
+                <a href="#bestsellers"><img src="bestsellers.jpg" height="200" width="250"></a><br><br>
+                <font face="Corbel" color="white" size="5">Best-Sellers</font>
+            </td>
+            <td align="center">
+                <a href="#arrivals"><img src="new.jpg" height="200" width="250"></a><br><br>
+                <font face="Corbel" color="white" size="5">New Releases</font>
+            </td>
+            <td align="center">
+                <img src="offer.jpg" height="200" width="250"><br><br>
+                <font face="Corbel" color="white" size="5">Discounts & Offers</font>
+            </td>
+            <td align="center">
+                <img src="indian.jpg" height="200" width="250"><br><br>
+                <font face="Corbel" color="white" size="5">Indian Language</font>
+            </td>
+            <td align="center">
+                <img src="gift.jpg" height="200" width="250"><br><br>
+                <font face="Corbel" color="white" size="5">Gifting Ideas</font>
+            </td>
+        </tr>
+    </table>
+    <div class="container">
+    <div class="sidenav">
+        <h1>Filters:</h1>
+        <h3><b>Category</b></h3>
+        <li><strong>Books</strong>
+            <li>Personal Transformation</li>
+            <li>Biographies & Autobiographies</li>
+            <li>Analysis & Strategy</li>
+            <li>Healthy Living & Wellness</li>
+            <li>Classic Fiction</li>
+            <li>Sciences, Technology & Medicine</li></p>
+        <h3><b>Price</b></h3>
+            <li>Under Rs.100</li>
+            <li>Rs.100-Rs.200</li>
+            <li>Rs.200-Rs.500</li>
+            <li>Rs.500-Rs.1000</li>
+            <li>Rs.1000 & Above</li>
+            <li>
+            <table>
+                <tr>
+                    <td><input type="number" name="Range" id="Max" placeholder="₹Max"></td>
+                    <td><input type="number" name="Range" id="Min" placeholder="₹Min"></td>
+                    <td><button style="border: 1px solid; border-style: groove; border-radius: 4px; height: 30px; width: 50px; cursor: pointer;">Go</button></td>
+                </tr>
+            </table>
+            </li>
+        <h3><b>Deals And Discounts</b></h3>
+            <li>Todays Deals</li>
+        <h3><b>New Arrivals</b></h3>
+            <li>Last 30 days</li>
+            <li>Last 90 days</li>
+            <li>Next 90 days</li>
+        <h3><b>English and Indian Languages</b></h3>
+            <li><input Name="Language" type="checkbox"><Label>English</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Hindi</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Marathi</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Tamil</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Telugu</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Malyalam</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Gujarati</Label></li>
+        <h3><b>Foreign Languages</b></h3>
+            <li><input Name="Language" type="checkbox"><Label>Afrikaans</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Arabic</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Catalan</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Danish</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Dutch</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>French</Label></li>
+            <li><input Name="Language" type="checkbox"><Label>Japanese</Label></li>
+        <h3><b>Avg. Customer Review</b></h3>
+            <li>⭐⭐⭐⭐ & up</li>
+            <li>⭐⭐⭐ & up</li>
+            <li>⭐⭐ & up</li>
+            <li>⭐ & up</li>
+        <h3><b>Discount</b></h3>
+            <li>10% Off or more</li>
+            <li>25% Off or more</li>
+            <li>35% Off or more</li>
+            <li>50% Off or more</li>
+            <li>60% Off or more</li>
+            <li>70% Off or more</li>
+        <h3><b>Availability</b></h3>
+            <li><input type="checkbox"><label>Include Out Of Stock</label></li>
+    </div>
+
+    <div class="separator"></div>
+<div class="tables">
+    <table id="trending" border="0" width="100%" height="300" align="center" bgcolor="#41424C" cellspacing="9" cellpadding="13">
+        <tr>
+            <td align="left" colspan="4">
+                <font face="Perpetua" size="7" color="white">Most Read on Bookery:-</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="white">
+                <img src="20.jpg"><br>
+                <font face="Corbel" size="6"><b>Dopamine Detox</b></font><br>
+                <font color="#373737" size="4">by Thibaut Meurisse</font><br><br>
+                <font face="arial" size="5">MRP: ₹220</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="21.jpg"><br>
+                <font face="Corbel" size="6"><b>The Gita</b></font><br>
+                <font color="#373737" size="4">by Anant Pai</font><br><br>
+                <font face="arial" size="5">MRP: ₹32.76</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="22.jpg"><br>
+                <font face="Corbel" size="6"><b>Harry Potter</b></font><br>
+                <font color="#373737" size="4">by J.K. Rowling</font><br><br>
+                <font face="arial" size="5">MRP: ₹285</font><br><br>
+                <button type="Submit">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="Submit">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="23.jpg"><br>
+                <font face="Corbel" size="6"><b>Breakout Trading</b></font><br>
+                <font color="#373737" size="4">by Indrazith Shantharaj</font><br><br>
+                <font face="arial" size="5">MRP: ₹199</font><br><br>
+                <button type="Submit">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="Submit">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+        </tr>
+    </table>
+    <table id="bestsellers" border="0" width="100%" height="300" align="center" bgcolor="#41424C" cellspacing="9" cellpadding="13">
+        <tr>
+            <td align="left" colspan="4">
+                <font face="Perpetua" size="7" color="white">Best-Sellers:-</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="white">
+                <img src="28.jpg" width="241" height="320"><br>
+                    <font face="Corbel" size="6"><b>The Monk</b></font><br>
+                    <font color="#373737" size="4">by Robin Sharma</font><br><br>
+                    <font face="arial" size="5">MRP: ₹220</font><br><br>
+                    <button type="button">
+                        <font face="arial" size="4">
+                            Buy Now
+                        </font>
+                    </button>
+                    <button type="button">
+                        <font face="arial" size="4">
+                            Add to Cart
+                        </font>
+                    </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="25.jpg" width="231" height="320"><br>
+                <font face="Corbel" size="6"><b>Sweetest Oblivion</b></font><br>
+                <font color="#373737" size="4">by Danielle Lori</font><br><br>
+                <font face="arial" size="5">MRP: ₹890</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="26.jpg" width="241" height="320"><br>
+                <font face="Corbel" size="6"><b>War of Lanka</b></font><br>
+                <font color="#373737" size="4">by Amish Tripathi</font><br><br>
+                <font face="arial" size="5">MRP: ₹326</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="27.jpg" width="241" height="320"><br>
+                <font face="Corbel" size="6"><b>That Night</b></font><br>
+                <font color="#373737" size="4">by Nidhi Upadhyay</font><br><br>
+                <font face="arial" size="5">MRP: ₹153</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+        </tr>
+
+    </table>
+    <table id="arrivals" border="0" width="100%" height="300" align="center" bgcolor="#41424C" cellspacing="9" cellpadding="13">
+        <tr>
+            <td align="left" colspan="4">
+                <font face="Perpetua" size="7" color="white">New Arrivals:-</font>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" bgcolor="white">
+                <img src="24.jpg" width="231" height="320"><br>
+                    <font face="Corbel" size="6"><b>The Indian Metropolis</b></font><br>
+                    <font color="#373737" size="4">by Feroze Varun Gandhi</font><br><br>
+                    <font face="arial" size="5">MRP: ₹1125</font><br><br>
+                    <button type="button">
+                        <font face="arial" size="4">
+                            Buy Now
+                        </font>
+                    </button>
+                    <button type="button">
+                        <font face="arial" size="4">
+                            Add to Cart
+                        </font>
+                    </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="29.jpg" width="231" height="320"><br>
+                <font face="Corbel" size="6"><b>Doglapan</b></font><br>
+                <font color="#373737" size="4">by Ashneer Grover</font><br><br>
+                <font face="arial" size="5">MRP: ₹342</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="30.jpg" width="241" height="320"><br>
+                <font face="Corbel" size="6"><b>Vahana</b></font><br>
+                <font color="#373737" size="4">by Stuti Gupta</font><br><br>
+                <font face="arial" size="5">MRP: ₹208</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+            <td align="center" bgcolor="white">
+                <img src="31.jpg" width="241" height="320"><br>
+                <font face="Corbel" size="6"><b>Operation Ganga</b></font><br>
+                <font color="#373737" size="4">by Tarun Pithode</font><br><br>
+                <font face="arial" size="5">MRP: ₹295</font><br><br>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Buy Now
+                    </font>
+                </button>
+                <button type="button">
+                    <font face="arial" size="4">
+                         Add to Cart
+                    </font>
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+    <div class="footer">
+        <div class="toplink"><a href="#Top"><font color="white">Back To Top</font></a></div>
+        <div class="links">
+            <div class="links1">
+                <strong>Get to Know Us</strong><br>
+                About Us<br>
+                Careers<br>
+                Press Releases<br>
+                Bookery Science<br>
+            </div>
+            <div class="links2">
+                <strong>Connect with Us</strong><br>
+                Facebook<br>
+                Twitter<br>
+                Instagram<br>
+            </div>
+            <div class="links3">
+                <strong>Earn Money with Us</strong><br>
+                Sell on Bookery<br>
+                Sell under Bookery Accelerator<br>
+                Protect and Build Your Brand<br>
+                Bookery Global Selling<br>
+                Become an Affiliate<br>
+                Fulfilment by Bookery<br>
+                Advertise Your Products<br><br>
+            </div>
+            <div class="links4">
+                <strong>Let Us Help You</strong><br>
+                COVID-19 and Bookery<br>
+                Your Account<br>
+                Returns Centre<br>
+                100% Purchase Protection<br>
+                Bookery App Download<br>
+                Bookery Assistant Download<br>
+                Help<br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

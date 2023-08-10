@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bookery.in Checkout</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
+</head>
+<body bgcolor="#41424C">
+	<table id="header" border="0" bordercolor="white" cellspacing="0" width="100%" height="80" bgcolor="232023" align="center">
+        <tr>
+            <td>
+                <a href="bookstore.html"><img src="bookery.png" height="100"></a>
+            </td>
+            <td align="center">
+                <font face="Corbel" color="white" size="7">Checkout&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp;</font>
+            </td>
+            <td align="center">
+                <span class="material-symbols-rounded" style="color: white; font-size: 40px;">
+                    lock &nbsp;
+                </span>
+            </td>
+        </tr>
+    </table>
+<header>
+	<div class="pay">
+	<div class="container">
+		<div class="left">
+			<h3>1. &nbsp; BILLING ADDRESS</h3>
+			<form action="#method">
+                Country/Region
+                <div id="region">
+                <select>
+                    <option>India</option>
+                    <option>Texas</option>
+                    <option>Brampton</option>
+                    <option>Nepal</option>
+                    <option>Sri Lanka</option>
+                </select>
+                </div>
+                Full Name
+				<input type="text" name="" placeholder="Enter name" required>
+
+				Mobile Number
+				<input type="number" name="" placeholder="Enter mobile number" required>
+
+                PIN code
+				<input type="number" name="" placeholder="6 digits [0-9] PIN Code" required>
+
+				Address
+				<input type="text" name="" placeholder="Enter address" required>
+
+				<div class="div">
+				<div class="town">
+				Town/City<br>
+				<input type="text" name="" placeholder="Enter city" style="width: 100%"> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+				</div> &emsp; &emsp; &emsp;
+				
+				<div class="state">
+				State<br>
+				<select style="width: 100%; padding: 0.5rem 0.7rem; margin: 0.5rem 0; outline: none;
+				border-radius: 10px;
+				background-color: #F0F2F2;
+				border-radius: 8px;
+				border-style: solid; cursor: pointer;">
+					<option>Choose a state</option>
+					<option>Gujarat</option>
+					<option>Rajasthan</option>
+					<option>Maharashtra</option>
+					<option>Madhya Pradesh</option>
+					<option>Karnataka</option>
+					<option>Haryana</option>
+				</select> &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+				</div>
+				</div>
+				<input type="checkbox"> &nbsp; Make this my default address <br><br>
+				<button style="cursor:pointer; background-color: #ffc527; width: 20%; border: 0; height: 30px; border-radius: 8px; color: black;" type="submit">
+					Use this address
+				</button>
+			</form><br>
+		</div>
+		<hr style="width: 100%"><br>
+		<div class="right">
+			<div id="method">
+			<h3>2. &nbsp; Choose payment method</h3></div>
+			<form>
+			<a href="#card"><input type="radio" name="pay"></a> &emsp; Pay with Debit/Credit/ATM Cards<br><br>
+			<input type="radio" name="pay"> &emsp; Net Banking<br><br>
+			<input type="radio" name="pay"></a> &emsp; Other UPI Apps<br><br>
+			<input type="radio" name="pay"></a> &emsp; EMI<br><br>
+			<input type="radio" name="pay"></a> &emsp; Cash on Delivery/Pay on Delivery
+			</form><br>
+			<hr style="width: 100%"><br>
+			<h3 id="card">3. &nbsp; PAYMENT</h3>
+			<form action="confirm.html">
+				Accepted Card <br>
+				<img src="card1.png" width="100">
+				<img src="card2.png" width="50">
+				<br><br>
+
+				Credit Card Number
+			<input type="number" name="" placeholder="Enter card number" required>
+				
+				Exp Month
+				<select style="width: 100%; padding: 0.5rem 0.7rem; margin: 0.5rem 0; outline: none;
+				background-color: #F0F2F2;
+				border-style: solid; cursor: pointer;">
+					<option>Choose Month</option>
+					<option>January</option>
+					<option>February</option>
+					<option>March</option>
+					<option>April</option>
+					<option>May</option>
+					<option>June</option>
+					<option>July</option>
+					<option>August</option>
+					<option>September</option>
+					<option>October</option>
+					<option>November</option>
+					<option>December</option>
+				</select>
+				<div id="zip">
+					<div class="year">
+					<label>
+						Exp Year<br>
+						<select style="width: 350px;">
+							<option>Choose Year</option>
+							<option>2022</option>
+							<option>2023</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+						</select>
+					</label></div> &nbsp; &nbsp; &nbsp;
+					<div class="cvv">
+						<label>
+						CVV
+						<input type="number" name="" placeholder="CVV" style="width: 350px;" required>
+					</label></div>
+				</div>
+				<button type="submit" style="width: 100%;
+				padding: 0.7rem 1.5rem;
+				background: #34495e;
+				color: white;
+				border: none;
+				font-size: 20px;
+				outline: none;
+				margin-top: 1rem;
+				cursor: pointer;">Proceed to Checkout</button><br><br>
+			</form>
+		</div>
+	</div> &emsp; &emsp;
+	<div class="summary" align="center">
+		<font size="2">
+		Choose a payment method to continue<br>checking out. You'll still have a chance to<br>review your order before it's final.</font><br><br>
+		<hr style="width: 100%">
+		<h3 align="left"><font color="black">Order Summary</font></h3><br>
+		<table id="summary" width="100%" border="0" bgcolor="white" cellspacing="4">
+			<tr>
+				<td align="left">
+					Items:
+				</td>
+				<td align="right">
+					₹1,181.00
+				</td>
+			</tr>
+			<tr>
+				<td align="left">
+					Delivery:
+				</td>
+				<td align="right">
+					₹0.00
+				</td>
+			</tr>
+		</table><br>
+		<hr style="width: 100%"><br>
+		<table id="ord" width="100%" border="0" bgcolor="white" cellspacing="0">
+			<tr>
+				<td align="left">
+					<font color="#B12704"><b>Order Total:</b></font>
+				</td>
+				<td align="right">
+					<font color="#B12704"><b>₹1,181.00</b></font>
+				</td>
+			</tr>
+		</table><br>
+		<hr style="width: 100%"><br>
+	</div>
+	</div>
+</header>
+</body>
+</html>
