@@ -1,4 +1,4 @@
-const API_Key = '2d14cdb2207979702f9870166ac4f4ce';
+const API_Key = '';
 
 const btn = document.querySelector("button");
 const weatherReport = document.querySelector(".weather");
