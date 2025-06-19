@@ -1,4 +1,4 @@
-const URL = "https://api.freecurrencyapi.com/v1/latest?apikey=fca_live_gYtXtOaRGQrIBBzFGamrCQQjcIHISUiJYohAt5ah";
+const URL = "";
 
 const dropdowns = document.querySelectorAll(".dropdown select");
 const btn = document.querySelector("form button");
